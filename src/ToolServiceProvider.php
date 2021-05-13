@@ -25,7 +25,7 @@ class ToolServiceProvider extends ServiceProvider
         });
 
         Nova::serving(function (ServingNova $event) {
-            //
+            Nova::script('file-manager-field', __DIR__.'/../dist/js/field.js');
         });
     }
 
