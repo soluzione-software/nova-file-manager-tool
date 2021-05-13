@@ -2,6 +2,7 @@
 
 namespace SoluzioneSoftware\Nova\Tools\FileManager;
 
+use Illuminate\Support\Facades\App;
 use Laravel\Nova\Nova;
 use Laravel\Nova\Events\ServingNova;
 use Illuminate\Support\Facades\Route;
@@ -35,7 +36,7 @@ class ToolServiceProvider extends ServiceProvider
      */
     protected function routes()
     {
-        if ($this->app->routesAreCached()) {
+        if (App::routesAreCached()) {
             return;
         }
 
