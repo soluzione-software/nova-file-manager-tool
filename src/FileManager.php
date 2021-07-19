@@ -30,7 +30,6 @@ class FileManager extends Tool
         ]);
 
         Nova::script('file-manager', __DIR__.'/../dist/js/tool.js');
-        Nova::style('file-manager', __DIR__.'/../dist/css/tool.css');
     }
 
     /**
